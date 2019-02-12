@@ -2,15 +2,78 @@ body {
 background-color:#474747;
 }
 
+.logo {
+	height:125px;
+	width:125px;
+	float: left;	
+
+}
+
 .container {
 	width: 80%;
-	margin: 0 auto;
+	margin: 5 auto;
 }
 
 header {
+	height: 75px;
 	background-color:#4cff9c;
 }
 
-ul {
-	color:white;
+header::after {
+	content:'';
+	display: table;
+	clear: both;
+}
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 10px;
+	padding: 15px;
+	list-style: none;
+	
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 80px;
+	padding-top:23 px;
+	
+	position: relative;
+}
+
+nav a {
+	color:black;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size: 18px;
+
+}
+
+nav a:hover {
+	color: white;
+	text-decoration: underline;
+	
+}
+
+nav a::before {
+	content:'';
+	display: block;
+	height: 5px;
+	background-color:black;
+	
+	top:-25px;
+	position: absolute;
+	
+	width: 0%;
+	
+	transition: all ease-in-out 250ms;
+	
+}
+
+nav a:hover::before {
+	width: 100%;
+	
+	
 }
