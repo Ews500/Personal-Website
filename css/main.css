@@ -1,21 +1,25 @@
-body { 
+body {
 background-color:#474747;
 }
 
 .logo {
-	height:125px;
-	width:125px;
-	float: left;	
+	height:80px;
+	width:80px;
+	float: left;
+	padding-top: -15px;
+	padding-left: 15px;
 
 }
 
 .container {
-	width: 80%;
+	width: 95%;
+	top: auto;
 	margin: 5 auto;
 }
 
 header {
 	height: 75px;
+	width: 100%;
 	background-color:#4cff9c;
 }
 
@@ -29,17 +33,17 @@ nav {
 }
 
 nav ul {
-	margin: 10px;
-	padding: 15px;
+
 	list-style: none;
-	
+
 }
 
 nav li {
 	display: inline-block;
-	margin-left: 80px;
-	padding-top:23 px;
-	
+	margin-left: 65px;
+	top: -65px;
+	padding-right: 5px;
+
 	position: relative;
 }
 
@@ -47,14 +51,14 @@ nav a {
 	color:black;
 	text-decoration:none;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 14px;
 
 }
 
 nav a:hover {
 	color: white;
 	text-decoration: underline;
-	
+
 }
 
 nav a::before {
@@ -62,18 +66,18 @@ nav a::before {
 	display: block;
 	height: 5px;
 	background-color:black;
-	
-	top:-25px;
+
+	top: -15px;
 	position: absolute;
-	
+
 	width: 0%;
-	
+
 	transition: all ease-in-out 250ms;
-	
+
 }
 
 nav a:hover::before {
 	width: 100%;
-	
-	
+
+
 }
